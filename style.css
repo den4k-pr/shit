@@ -150,7 +150,7 @@ option{
 }
 
 .delivery{
-    padding: 150px 0;
+    padding: 100px 0;
     background-color: #f3f3f3;
     text-align: center;
     position: relative;
@@ -766,4 +766,59 @@ option{
     
         object-fit: cover;
     }
+}
+
+.coments{
+    max-width: 800px;
+    margin: 0 auto 100px auto;
+}
+
+.coments-title{
+    font-size: 32px;
+    line-height: 50px;
+    padding-bottom: 20px;
+}
+
+.coment-box{
+    padding: 20px 0;
+}
+
+.coment-box-top{
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.description{
+    font-size: 14px;
+    line-height: 18px;
+}
+.coment-box-top-right img{
+    width: 15px;
+}
+.coment-box-top-right{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.coment-box-top-left{
+    display: flex;
+    gap: 20px;
+}
+
+.coment-box-top-left img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.coment-box-top-left-text h3{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.coment-box-top-left-text span{
+    font-size: 14px;
 }
