@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Laftail</title>
+</head>
+<body>
+    <header class="header">
+        <a href="/index.html">
+            <img class="logo" src="/images/logo.png" alt="">
+        </a>
+        <ul class="header__list">
+            <li class="header__list-li">
+                <a href="#">Товари</a>
+            </li>
+        </ul>
+    </header>
+    <main class="main">
+        <div class="container">
+            <section class="greating">
+                <div class="greating-box">
+                    <h1 class="title">Відкрийте Свій Унікальний Стиль разом з Нами</h1>
+                    <p class="subTitle">місця, де модні тенденції зустрічаються з вашим смаком! Наші колекції створені для тих, хто прагне виділятися.</p>
+                </div>
+                <img class="greating-gif" src="/images/gif.gif" alt="">
+            </section>
+            <section class="products">
+                <div class="productContainer">
+                    <div class="productContainer__images">
+                        <button class="prev" id="prev2"></button>
+                        <div class="productContainer__images-slider">
+                            <img class="sliderImages-img1" id="sliderNextImage2" src="" alt="">
+                            <img class="sliderImages-img2" id="sliderImage2" src="" alt="">
+                        </div>
+                        <button class="next" id="next2"></button>
+                    </div>
+                    <div class="productContainer__info">
+                        <h2 class="productContent__info-name">Сукня</h2>
+                        <p class="productContent__info-text">Розмір: 48-50, 52-54, 56-58</p>
+                        <p class="productContent__info-text">Тканина: софт</p>
+                        <p class="productContent__info-text">Колір: чорний, молочний, блакитний</p>
+                        <p class="productContent__info-description">
+                            <br>
+                            Відкрийте для себе унікальну сукню, що зачаровує своїми яскравими кольорами та неперевершеним комфортом. Зшита з найкращих матеріалів, ця сукня дарує відчуття ніжності та легкості протягом усього дня.
+                            <br>
+                            <br>
+                            Завдяки стильному дизайну та витонченим деталям, ця сукня стане вашою улюбленою як для щоденних прогулянок, так і для урочистих подій. Її елегантний силует вигідно підкреслює фігуру, а зручний крій забезпечує повну свободу рухів.
+                        <p class="productContent__info-price">1140 ГРН</p>
+                        <span class="discount">1,599 ГРН</span>
+                        <button class="buttonFormActive">Замовити</button>
+                    </div>
+                </div>
+            </section>
+            <section class="manage" id="manage">
+                <form id="form">
+                    <h3>Заповніть дані для звязку</h3>
+                    <label>Імя фамілія:</label>
+                    <input id="name" placeholder="Артем Кузьменко" type="text" required>
+                    <label>Номер телефону:</label>
+                    <input id="tel" placeholder="+380987654321" type="text" required>
+                    <label>Колір:</label>
+                    <select id="color" required>
+                        <option value="" hidden selected>Оберіть колір</option>
+                        <option value="чорний">чорний</option>
+                        <option value="молочний">молочний</option>
+                        <option value="блакитний">блакитний</option>
+                    </select>
+                    <label>Розмір:</label>
+                    <select id="size" required>
+                        <option value="" hidden selected>Оберіть розмір</option>
+                        <option value="48-50">48-50</option>
+                        <option value="52-54">52-54</option>
+                        <option value="56-58">56-58</option>
+                    </select>
+                    <button type="submit">Відправити</button>
+                </form>
+            </section>
+            <img style="margin: 50px auto 100px auto; display: block;" src="./images/table.webp" alt="">
+            <div id="disqus_thread"></div>
+        </div>
+        <section class="delivery">
+            <div style="max-width: 500px; margin: 0 auto">
+                <h2 class="delivery-title">Термін та Умови доставки</h2>
+                <p class="delivery-text">Доставка товару здійснюється через Нову Пошту та Укрпошту.
+                    Замовлення отримане до 16-00 відправляється сьогодні,
+                    після 16-00 – на наступний день.</p>
+                <p class="delivery-text">Оплата за доставку здійснюється покупцем
+                    при отриманні товару або на картку.</p>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__list">
+                <a href="policy.html">Усі права захищені. © 2023 | Усі права захищені.</a>
+                <button class="footerButtonUp"><img src="./images/arrow-back.png" alt=""></button>
+            </div>
+        </div>
+    </footer>
+</body>
+<script>
+
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://laftel-1.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<script src="./scripts/buton.js"></script>
+<script src="./scripts/slider.js"></script>
+<script src="./scripts/app.js"></script>
+</html>
