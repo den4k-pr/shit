@@ -14,7 +14,7 @@ const prevButton2 = document.getElementById('prev2');
 const nextButton2 = document.getElementById('next2');
 const sliderImage2 = document.getElementById('sliderImage2');
 const sliderNextImage2 = document.getElementById('sliderNextImage2');
-let currentIndex2 = 0;
+let currentIndex2 = 6;
 
 // Preload images
 const preloadedImages2 = [];
