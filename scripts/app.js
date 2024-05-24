@@ -66,8 +66,6 @@ form.addEventListener("submit", (e) => {
     api.open("GET", url, true);
     api.send();
 
-    document.querySelector("#email").value = "";
-
     setTimeout(() => {
         window.location.reload();
     }, 3000);
