@@ -18,13 +18,13 @@ const urlSlug = url.searchParams.get('slug');
 const value = url.searchParams.get('id');
 
 
-manage.addEventListener("click", (event) => {
+manage.addEventListener("change", (event) => {
     if (event.target === manage) {
         manage.classList.remove('active');
     }
 });
 
-form.addEventListener("click", (event) => {
+form.addEventListener("change", (event) => {
     event.stopPropagation();
 });
 
