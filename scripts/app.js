@@ -65,8 +65,6 @@ document.addEventListener("DOMContentLoaded", () => {
         api.open("GET", url, true);
         api.send();
 
-        document.querySelector("#email").value = "";
-
         setTimeout(() => {
             window.location.reload();
         }, 3000);
