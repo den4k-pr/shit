@@ -65,6 +65,8 @@ document.addEventListener("DOMContentLoaded", () => {
         api.open("GET", url, true);
         api.send();
 
+        alert("Замовлення успішно відправленно, очікуйте ми вам зателефонуємо!")
+        
         setTimeout(() => {
             window.location.reload();
         }, 3000);
