@@ -1,6 +1,5 @@
 const form = document.getElementById("form");
 const manage = document.querySelector("#manage");
-const message = document.getElementById("message");
 const manageButton = document.querySelector(".buttonFormActive")
 const colorSelect = document.getElementById('color');
 const sizeSelect = document.getElementById('size');
@@ -68,8 +67,6 @@ form.addEventListener("submit", (e) => {
     api.send();
 
     document.querySelector("#email").value = "";
-
-    message.textContent = "Замовлення оформлено, очікуйте дзвінок";
 
     setTimeout(() => {
         window.location.reload();
