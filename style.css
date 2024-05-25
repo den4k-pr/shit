@@ -52,17 +52,16 @@ table {
 
 .container{
     max-width: 1110px;
-
     padding: 0 15px;
     margin: 0 auto;
 }
 
 .header{
-    padding-bottom: 30px;
+    border-bottom: 1px solid #272727;
 }
 
 .logo{
-    max-width: 350px;
+    max-width: 150px;
     width: 100%;
     margin: 0 auto;
     display: block;
@@ -76,7 +75,7 @@ table {
 }
 
 select{
-    padding: 7px 15px;
+    padding: 7px;
     border-radius: 5px;
 }
 
@@ -136,12 +135,55 @@ option{
 }
 
 .title{
-    font-size: 32px;
+    text-align: center;
+    font-size: 30px;
     line-height: 40px;
-    padding-bottom: 15px;
     font-weight: 700;
+    padding: 20px 0;
+    text-shadow: 2px 2px 4px #513e00;
+}
 
-    border-bottom: 1px solid #513e00;
+.priceBody{
+    background-color: #faa432;
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    height: 20px;
+}
+
+.priceBody-left{
+    background-color: #272727;
+}
+
+.priceBody-left p{
+    text-decoration: line-through;
+}
+
+.priceBody-right span,
+.priceBody-left span{
+    font-weight: 500;
+}
+
+.priceBody-right{
+    background-color: #4486ff;
+}
+
+.priceBody-left,
+.priceBody-right{
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+    font-weight: 700;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
 }
 
 .subTitle{
@@ -347,18 +389,54 @@ option{
 .buttonFormActive{
     display: block;
     font-size: 20px;
-    background-color: #513e00;
+    background-color: #135c9b;
     color: #fff;
     letter-spacing: 1px;
     border-radius: 7px;
-    padding: 15px 28px;
+    padding: 25px 28px;
     margin-top: 30px;
-    max-width: 220px;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    width: 100%;
     text-align: center;
     text-decoration: none;
     cursor: pointer;
     transition: .2s;
 }
+
+
+.informations{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-bottom: 50px;
+    margin: 0px auto;
+    max-width: 600px;
+}
+
+.informations-body{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.informations-body img{
+    width: 70px;
+    height: 70px;
+}
+
+.informations-body-box-title{
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 40px;
+    padding-bottom: 15px;
+}
+
+.informations-body-box-text{
+    font-size: 16px;
+    line-height: 24px;
+}
+
 
 .buttonFormActive:hover{
     background-color: #000000;
@@ -511,8 +589,8 @@ option{
     padding-top: 10px;
 }
 .manage form input{
-    padding: 7px 15px;
-    font-size: 16px;
+    padding: 6px 10px;
+    font-size: 14px;
     border-radius: 5px;
 
 }
@@ -538,7 +616,7 @@ option{
 
 .productContentF{
     display: flex;
-
+    
     gap: 40px;
     padding-bottom: 100px;
 }
@@ -704,6 +782,7 @@ option{
 
 .productContainer{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: left;
     gap: 60px;
